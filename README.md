@@ -62,7 +62,7 @@ Example: Distance: 15, Path: 0->2->5->3
 ### Step 4: Self-Validation (FINAL SCORING ONLY)
 ```bash
 # Validate your manually-found answer (ONE ATTEMPT ONLY)
-graph_validator undirected_graph_1_20_nodes.json "Distance: Y, Path: A->B->C"
+go run graph_validator.go  undirected_graph_1_20_nodes.json "Distance: Y, Path: A->B->C"
 ```
 
 **IMPORTANT**: Each validation is final - no retries or optimizations allowed after scoring.
@@ -136,11 +136,11 @@ After completing ALL questions, generate a comprehensive markdown report:
 
 **CRITICAL: FINAL ANSWER VALIDATION ONLY**
 
-A graph validator binary (`graph_validator`) is available for final answer verification. This tool should ONLY be used for final scoring after you have completed your manual pathfinding work.
+A graph validator script (`graph_validator.go`) is available for final answer verification. This tool should ONLY be used for final scoring after you have completed your manual pathfinding work.
 
 ### Usage Instructions:
 ```bash
-graph_validator <question_file.json> "Distance: X, Path: A->B->C"
+go run graph_validator.go <question_file.json> "Distance: X, Path: A->B->C"
 ```
 
 ### When to Use:
@@ -169,7 +169,7 @@ graph_validator <question_file.json> "Distance: X, Path: A->B->C"
 ### Example:
 ```bash
 # Only after completing manual pathfinding:
-graph_validator undirected_graph_1_20_nodes.json "Distance: 15, Path: 0->2->5->3"
+go run graph_validator.py undirected_graph_1_20_nodes.json "Distance: 15, Path: 0->2->5->3"
 ```
 
 The validator will check if your manually-found path is valid and optimal, giving you a ✅ or ❌ final result.
