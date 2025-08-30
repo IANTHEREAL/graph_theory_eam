@@ -136,11 +136,11 @@ After completing ALL questions, generate a comprehensive markdown report:
 
 **CRITICAL: FINAL ANSWER VALIDATION ONLY**
 
-A graph validator binary (`/alternative/graph_validator`) is available for final answer verification. This tool should ONLY be used for final scoring after you have completed your manual pathfinding work.
+A graph validator binary (`graph_validator`) is available for final answer verification. This tool should ONLY be used for final scoring after you have completed your manual pathfinding work.
 
 ### Usage Instructions:
 ```bash
-/alternative/graph_validator <question_file.json> "Distance: X, Path: A->B->C"
+graph_validator <question_file.json> "Distance: X, Path: A->B->C"
 ```
 
 ### When to Use:
