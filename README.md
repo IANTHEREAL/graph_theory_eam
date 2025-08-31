@@ -1,4 +1,4 @@
-# graph_theory_eam
+# graph_theory_exam
 
 ## Exam Process
 
